@@ -1,12 +1,13 @@
-import GlobalCss from './stylos'
+import Header from './components/Header'
+import { GlobalCss, Container } from './stylos'
 
 function App() {
   return (
     <>
       <GlobalCss />
-      <div>
-        <h1>Olá teste</h1>
-      </div>
+      <Container>
+        <Header />
+      </Container>
     </>
   )
 }
