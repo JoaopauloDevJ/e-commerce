@@ -1,23 +1,51 @@
 import Product from '../Product'
 import * as S from './styles'
 
-type Props = {
+export type Props = {
   title: string
   background: 'gray' | 'black'
 }
 
 const ProductList = ({ title, background }: Props) => (
-  <div className="container">
-    <S.Container>
+  <S.Container background={background}>
+    <div className="container">
       <S.Title>{title}</S.Title>
       <S.List>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        <Product
+          title="Resident Evil 4"
+          category="Ação"
+          system="PS4"
+          image="//placehold.it/222x250"
+          infos={['-10%', 'R$ 150,00']}
+          description="Jogos de ação em terceira pessoa!"
+        />
+        <Product
+          title="Resident Evil 4"
+          category="Ação"
+          system="PS4"
+          image="//placehold.it/222x250"
+          infos={['-10%', 'R$ 150,00']}
+          description="Jogos de ação em terceira pessoa!"
+        />
+        <Product
+          title="Resident Evil 4"
+          category="Ação"
+          system="PS4"
+          image="//placehold.it/222x250"
+          infos={['-10%', 'R$ 150,00']}
+          description="Jogos de ação em terceira pessoa!"
+        />
+        <Product
+          title="Resident Evil 4"
+          category="Ação"
+          system="PS4"
+          image="//placehold.it/222x250"
+          infos={['-10%', 'R$ 150,00']}
+          description="Jogos de ação em terceira pessoa!"
+        />
       </S.List>
-    </S.Container>
-  </div>
+    </div>
+  </S.Container>
 )
 
 export default ProductList

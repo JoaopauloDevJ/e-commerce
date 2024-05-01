@@ -1,8 +1,8 @@
 import { styled } from 'styled-components'
-import { cores } from '../../stylos'
+import { colors } from '../../stylos'
 
 export const HeadeBar = styled.header`
-  background-color: ${cores.cinza};
+  background-color: ${colors.gray};
   padding: 24px;
   border-radius: 16px;
   margin-bottom: 80px;
@@ -11,7 +11,7 @@ export const HeadeBar = styled.header`
   justify-content: space-between;
 
   a {
-    color: ${cores.branco};
+    color: ${colors.white};
     text-decoration: none;
     font-weight: bold;
   }

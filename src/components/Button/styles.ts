@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { cores } from '../../stylos'
+import { colors } from '../../stylos'
 import { Link } from 'react-router-dom'
 
 export const ButtonContainer = styled.button`
-  border: 2px solid ${cores.branco};
-  color: ${cores.branco};
+  border: 2px solid ${colors.white};
+  color: ${colors.white};
   background-color: transparent;
   font-size: 16px;
   font-weight: bold;
@@ -13,8 +13,8 @@ export const ButtonContainer = styled.button`
 `
 
 export const ButtonLink = styled(Link)`
-  border: 2px solid ${cores.branco};
-  color: ${cores.branco};
+  border: 2px solid ${colors.white};
+  color: ${colors.white};
   background-color: transparent;
   font-size: 16px;
   font-weight: bold;

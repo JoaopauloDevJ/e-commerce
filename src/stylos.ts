@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const cores = {
-  preto: '#111111',
-  cinza: '#333333',
-  verde: '#10AC84',
-  branco: '#EEEEEE'
+export const colors = {
+  black: '#111111',
+  gray: '#333333',
+  green: '#10AC84',
+  white: '#EEEEEE'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -13,12 +13,14 @@ export const GlobalCss = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+
   }
 
   body {
-    background-color: ${cores.preto};
-    color: ${cores.branco};
+    background-color: ${colors.black};
+    color: ${colors.white};
     padding-top: 40px;
+    font-family: "Roboto", sans-serif;
   }
 
   .container {
