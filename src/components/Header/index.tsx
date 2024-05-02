@@ -6,7 +6,9 @@ import Carrinho from '../../assets/images/carrinho.svg'
 const Header = () => (
   <S.HeadeBar>
     <div>
-      <img src={Logo} alt="EPLAY" />
+      <Link to="/">
+        <img src={Logo} alt="EPLAY" />
+      </Link>
       <nav>
         <S.Links>
           <S.LinkItem>
