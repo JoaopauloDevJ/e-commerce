@@ -1,7 +1,7 @@
 import Hero from '../../components/Hero'
 import Section from '../../components/Section'
 import Gallery from '../../components/Gallery'
-import galeriaImg from '../../assets/images/galeria3.jpg'
+import galeriaImg from '../../assets/images/trailer.jpg'
 
 const Product = () => {
   return (
