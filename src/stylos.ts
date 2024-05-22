@@ -8,6 +8,11 @@ export const colors = {
   lightGray: '#A3A3A3'
 }
 
+export const Breakpointer = {
+  descktop: '1024px',
+  tablet: '768px'
+}
+
 export const GlobalCss = createGlobalStyle`
   * {
     margin: 0;
@@ -29,5 +34,8 @@ export const GlobalCss = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width: ${Breakpointer.descktop}) {
+      max-width: 80%;
+    }
   }
 `

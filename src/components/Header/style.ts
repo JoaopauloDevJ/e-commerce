@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { colors } from '../../stylos'
+import { Breakpointer, colors } from '../../stylos'
 
 export const HeadeBar = styled.header`
   background-color: ${colors.gray};
@@ -19,6 +19,10 @@ export const HeadeBar = styled.header`
   div {
     display: flex;
     align-items: center;
+  }
+
+  @media (max-width: ${Breakpointer.tablet}) {
+    display: none;
   }
 `
 

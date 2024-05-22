@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../stylos'
+import { Breakpointer, colors } from '../../stylos'
 import { TagContainer } from '../Tag/styles'
 import { ButtonContainer } from '../Button/styles'
 
@@ -8,10 +8,16 @@ export const Banner = styled.div`
   height: 480px;
   display: block;
   width: 100%;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
   padding-top: 16px;
+
+  @media (max-width: ${Breakpointer.tablet}) {
+    background-size: cover;
+  }
 
   &::after {
     position: absolute;
