@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 import { colors } from '../../stylos'
 
-export type InputGroupProps = {
+type InputGroupProps = {
   maxWidth?: string
 }
 
-export type RowProps = {
+type RowProps = {
   marginTop?: string
 }
-
-export type CartProps = {
+export type tabButtonProps = {
   isActive: boolean
 }
 
@@ -41,7 +40,7 @@ export const InputGroup = styled.div<InputGroupProps>`
   }
 `
 
-export const TabButton = styled.button<CartProps>`
+export const TabButton = styled.button<tabButtonProps>`
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
