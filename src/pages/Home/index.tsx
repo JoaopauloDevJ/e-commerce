@@ -56,7 +56,11 @@ const Home = () => {
     )
   }
 
-  return <h2>Carregando...</h2>
+  return (
+    <div className="container">
+      <h2>Carregando...</h2>
+    </div>
+  )
 }
 
 export default Home

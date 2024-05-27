@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 
 import Logo from '../../assets/images/logo.svg'
-import Carrinho from '../../assets/images/carrinho.svg'
+import cartIcon from '../../assets/images/carrinho.svg'
 
 import { open } from '../../store/reducer/Cart'
 import { RootReducer } from '../../store'
@@ -66,7 +66,7 @@ const Header = () => {
         <S.ButtonCart onClick={openCart}>
           {items.length}
           <span> - Produto(s)</span>
-          <img src={Carrinho} alt="carrinho" />
+          <img src={cartIcon} alt="carrinho" />
         </S.ButtonCart>
       </S.HeaderRow>
       <S.NavMobile className={isMenuOpen ? 'is-open' : ''}>

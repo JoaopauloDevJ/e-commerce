@@ -21,11 +21,11 @@ const Product = ({
   title,
   id
 }: Props) => {
-  const getDescription = (description: string) => {
-    if (description.length > 95) {
-      return description.slice(0, 92) + '...'
+  const getDescription = (text: string) => {
+    if (text.length > 95) {
+      return text.slice(0, 92) + '...'
     }
-    return description
+    return text
   }
 
   return (
@@ -39,10 +39,10 @@ const Product = ({
           <Tag key={infos}>{infos}</Tag>
         ))}
       </S.Infos>
-      <S.Titulo>{title}</S.Titulo>
+      <S.Title>{title}</S.Title>
       <Tag>{category}</Tag>
       <Tag>{system}</Tag>
-      <S.Descricao>{getDescription(description)}</S.Descricao>
+      <S.Description>{getDescription(description)}</S.Description>
     </S.Card>
   )
 }

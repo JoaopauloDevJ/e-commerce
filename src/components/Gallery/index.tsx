@@ -1,6 +1,6 @@
 import Section from '../Section'
 
-import fechar from '../../assets/images/fechar.png'
+import closeIcon from '../../assets/images/fechar.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 
@@ -70,11 +70,11 @@ const Gallery = ({ defaultCover, name, items }: Props) => {
           ))}
         </S.Items>
       </Section>
-      <S.Modal className={modal.isVisible ? 'visivel' : ''}>
+      <S.Modal className={modal.isVisible ? 'is-visible' : ''}>
         <S.ModalContent className="container">
           <header>
             <h4>{name}</h4>
-            <img src={fechar} onClick={() => closeModal()} />
+            <img src={closeIcon} alt="Ícone de fechar" onClick={closeModal} />
           </header>
           {modal.url === 'image' ? (
             <img src={modal.url} />
@@ -82,7 +82,7 @@ const Gallery = ({ defaultCover, name, items }: Props) => {
             <iframe frameBorder={0} src={modal.url} />
           )}
         </S.ModalContent>
-        <div className="overlay" onClick={() => closeModal()}></div>
+        <div className="overlay" onClick={closeModal}></div>
       </S.Modal>
     </>
   )

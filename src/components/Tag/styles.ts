@@ -1,6 +1,8 @@
-import styled from 'styled-components'
-import { colors } from '../../stylos'
 import { Props } from './index'
+
+import { colors } from '../../stylos'
+
+import styled from 'styled-components'
 
 export const TagContainer = styled.div<Props>`
   background-color: ${colors.green};
