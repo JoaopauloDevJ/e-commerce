@@ -1,9 +1,12 @@
 import { useDispatch } from 'react-redux'
-import { add, open } from '../../store/reducer/Cart'
-import { Game } from '../../pages/Home'
-import { formataPreco } from '../ProductsList/index'
-import Button from '../Button'
+
 import Tag from '../Tag'
+import Button from '../Button'
+
+import { Game } from '../../pages/Home'
+import { add, open } from '../../store/reducer/Cart'
+import { formataPreco } from '../ProductsList/index'
+
 import * as S from './styles'
 
 type Props = {

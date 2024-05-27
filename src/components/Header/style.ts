@@ -17,10 +17,15 @@ export const HeadeBar = styled.header`
   border-radius: 16px;
   margin-bottom: 80px;
 
-  a {
+  a,
+  span {
     color: ${colors.white};
     text-decoration: none;
     font-weight: bold;
+  }
+
+  h1 {
+    line-height: 0;
   }
 `
 
@@ -30,10 +35,8 @@ export const HeaderRow = styled.div`
   justify-content: space-between;
 
   > div {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     @media (max-width: 767px) {
       flex: 1;
@@ -85,10 +88,11 @@ export const ButtonCart = styled.a`
 
 export const Hamburguer = styled.div`
   width: 32px;
+  cursor: pointer;
 
   span {
-    display: block;
     height: 2px;
+    display: block;
     width: 100%;
     background-color: ${colors.white};
     margin-bottom: 4px;

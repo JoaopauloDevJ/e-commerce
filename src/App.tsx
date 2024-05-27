@@ -1,11 +1,14 @@
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
-import { GlobalCss } from './stylos'
-import { store } from './store'
+
 import Rotas from './routes'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Cart from './components/Cart'
+
+import { store } from './store'
+
+import { GlobalCss } from './stylos'
 
 function App() {
   return (

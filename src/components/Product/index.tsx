@@ -29,8 +29,11 @@ const Product = ({
   }
 
   return (
-    <S.Card to={`/product/${id}`}>
-      <img src={image} title={title} />
+    <S.Card
+      title={`Clique aqui e saiba mais sobre o jogo: ${title}`}
+      to={`/product/${id}`}
+    >
+      <img src={image} alt={title} />
       <S.Infos>
         {infos.map((infos) => (
           <Tag key={infos}>{infos}</Tag>

@@ -1,36 +1,17 @@
-import { useState } from 'react'
-import { GalleryItems } from '../../pages/Home'
-import * as S from './styles'
 import Section from '../Section'
-import galeriaImg1 from '../../assets/images/galeria.png'
-import galeriaImg2 from '../../assets/images/galeria2.webp'
-import galeriaImg3 from '../../assets/images/galeria4.jpg'
+
+import fechar from '../../assets/images/fechar.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
-import fechar from '../../assets/images/fechar.png'
+
+import { useState } from 'react'
+import { GalleryItems } from '../../pages/Home'
+
+import * as S from './styles'
 
 interface ModalState extends GalleryItems {
   isVisible: boolean
 }
-
-const mock: GalleryItems[] = [
-  {
-    type: 'image',
-    url: galeriaImg1
-  },
-  {
-    type: 'image',
-    url: galeriaImg2
-  },
-  {
-    type: 'image',
-    url: galeriaImg3
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/1O6Qstncpnc?si=HAj4UaQqPdFeO0Nr'
-  }
-]
 
 type Props = {
   defaultCover: string

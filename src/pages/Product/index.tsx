@@ -1,9 +1,7 @@
 import Hero from '../../components/Hero'
 import Section from '../../components/Section'
 import Gallery from '../../components/Gallery'
-import galeriaImg from '../../assets/images/trailer.jpg'
-import { useEffect, useState } from 'react'
-import { Game } from '../Home'
+
 import { useParams } from 'react-router-dom'
 import { useGetGameQuery } from '../../services/api'
 

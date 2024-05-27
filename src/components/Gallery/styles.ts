@@ -18,11 +18,12 @@ export const Action = styled.div`
   align-items: center;
   justify-content: center;
   opacity: 0;
-  cursor: pointer;
+  transition: opacity 0.5s ease;
 `
 
 export const Item = styled.li`
   position: relative;
+  cursor: zoom-in;
 
   > img {
     border: 2px solid ${colors.white};
@@ -69,6 +70,7 @@ export const ModalContent = styled.div`
   max-width: 960px;
   position: relative;
   z-index: 1;
+
   header {
     display: flex;
     justify-content: space-between;
@@ -80,6 +82,8 @@ export const ModalContent = styled.div`
     }
 
     img {
+      height: 16px;
+      width: 16px;
       cursor: pointer;
     }
   }

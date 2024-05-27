@@ -1,14 +1,13 @@
-import * as S from './style'
-import { formataPreco } from '../ProductsList/index'
 import Tag from '../Tag'
 import Button from '../Button'
-import { Game } from '../../pages/Home'
-import { useEffect, useState } from 'react'
 
+import { formataPreco } from '../ProductsList/index'
 import { useGetFeatureGameQuery } from '../../services/api'
 
+import * as S from './style'
+
 const Banner = () => {
-  const { data: game, isLoading } = useGetFeatureGameQuery()
+  const { data: game } = useGetFeatureGameQuery()
 
   if (!game) {
     return <h3>Carregando...</h3>

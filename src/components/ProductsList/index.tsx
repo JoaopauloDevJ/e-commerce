@@ -1,5 +1,7 @@
-import { Game } from '../../pages/Home'
 import Product from '../Product'
+
+import { Game } from '../../pages/Home'
+
 import * as S from './styles'
 
 export type Props = {
