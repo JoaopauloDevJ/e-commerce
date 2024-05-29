@@ -5,7 +5,6 @@ import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 
 import { useState } from 'react'
-import { GalleryItems } from '../../pages/Home'
 
 import * as S from './styles'
 

@@ -71,7 +71,7 @@ export const LinkItem = styled.li`
   }
 `
 
-export const ButtonCart = styled.a`
+export const ButtonCart = styled.span`
   display: flex;
   cursor: pointer;
 

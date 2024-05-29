@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../stylos'
+import { Breakpointer, colors } from '../../stylos'
 
 type InputGroupProps = {
   maxWidth?: string
@@ -8,7 +8,7 @@ type InputGroupProps = {
 type RowProps = {
   marginTop?: string
 }
-export type tabButtonProps = {
+type tabButtonProps = {
   isActive: boolean
 }
 
@@ -17,6 +17,10 @@ export const Row = styled.div<RowProps>`
   column-gap: 24px;
   margin-top: ${(props) => props.marginTop || '0'};
   align-items: flex-end;
+
+  @media (max-width: ${Breakpointer.tablet}) {
+    display: block;
+  }
 `
 
 export const InputGroup = styled.div<InputGroupProps>`
@@ -39,8 +43,12 @@ export const InputGroup = styled.div<InputGroupProps>`
     width: 100%;
 
     &.error {
-      border: 2px solid ${colors.red};
+      border: 1px solid ${colors.red};
     }
+  }
+
+  @media (max-width: ${Breakpointer.tablet}) {
+    margin-top: 16px;
   }
 `
 
@@ -59,5 +67,10 @@ export const TabButton = styled.button<tabButtonProps>`
 
   img {
     margin-right: 8px;
+  }
+
+  @media (max-width: ${Breakpointer.tablet}) {
+    margin-top: 8px;
+    width: 100%;
   }
 `
